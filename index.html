@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Shrijay Industrial Solutions</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets\img\SHRIJAY INDUSTRIES LOGO.png" rel="icon">
+
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 45px;
+      }
+
+      .hero p {
+        display: block;
+        /* Ensure the paragraph is displayed on small screens */
+      }
+    }
+
+    .hero p {
+      animation: fadeInDown 1s both 0.2s;
+      /* Hide the paragraph by default */
+    }
+
+    @media (min-width: 1024px) {
+
+      .hero h2,
+      .hero p {
+        max-width: 60%;
+      }
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      visibility: visible;
+      /* Always visible */
+      opacity: 1;
+      left: 15px;
+      bottom: 15px;
+      z-index: 99999;
+      background-color: var(--accent-color);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.4s;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp-button img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .whatsapp-button:hover {
+      background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+      transform: scale(1.1);
+    }
+
+
+
+    .comment-box {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .comment-form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .comment-form button {
+      width: 100%;
+      padding: 12px;
+      background: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .comment-form button:hover {
+      background: darkorange;
+    }
+
+    @media (max-width: 576px) {
+      .comment-box {
+        padding: 15px;
+      }
+
+      .comment-form input,
+      .comment-form textarea {
+        font-size: 14px;
+        padding: 8px;
+      }
+
+      .comment-form button {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets\img\SHRIJAY INDUSTRIES LOGO.png" alt="" class="resized-image">
+        <h1 class="sitename">Shrijay</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+
+
+
+          <!-- <li><a href="#team">Team</a></li> -->
+
+          <!--  -->
+          <!--  -->
+          <li class="dropdown"><a href="#portfolio"><span>Products</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <!-- <li><a href="#">Dropdown 1</a></li> -->
+
+              <li class="dropdown"><a href="#"><span>Pallet Trucks</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Super low profile hydraulic pallet truck</a></li>
+                  <li><a href="#">5000 kg hydraulic pallet truck</a></li>
+                  <li><a href="#">Reel pallet truck</a></li>
+                  <li><a href="#">Scissor pallet truck</a></li>
+                  <li><a href="#">Stainless-steel pallet truck</a></li>
+                  <li><a href="#">Weighing scale pallet truck</a></li>
+                  <li><a href="#">Super low profile hydraulic pallet truck</a></li>
+                  <li><a href="#">Semi-electric pallet truck</a></li>
+                  <li><a href="#">1600 kg Electric pallet truck</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Table Trucks</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Platform Hand Truck</a></li>
+                  <li><a href="#">Scissor lift table truck</a></li>
+                  <li><a href="#">Platform stacker</a></li>
+                  <li><a href="#">Electric scissor lift table truck</a></li>
+                  <li><a href="#">3000 kg hydraulic pallet truck</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Satckers</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Electric pallet Stckers</a></li>
+                  <li><a href="#">Manual Stacker</a></li>
+                  <li><a href="#">Semi Electric Stacker</a></li>
+                  <li><a href="#">Economy Power Stacker</a></li>
+                  <li><a href="#">Heavy Duty Power Stacker</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Forklifts and Reach Satckers</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Electric Reach Trucks</a></li>
+                  <li><a href="#">Electrical Forklift Trucks</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Docking Equipment</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Stationery Scissor Lift</a></li>
+                  <li><a href="#">Edge Dock Leveler</a></li>
+                  <li><a href="#">Hydraulic Dock Leveler</a></li>
+                  <li><a href="#">Mobile Ramp</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Goods Lift</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Hydraulic Goods Lift</a></li>
+                  <li><a href="#">Hoist Goods Lift</a></li>
+                  <li><a href="#">Vertical Reciprocating Conveyor</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Order Peakers and Loaders</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Mobile Order Picker</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Drum Handlers</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Crane Attachment</a></li>
+                  <li><a href="#">Single Parrot Beak Fork Attachment</a></li>
+                  <li><a href="#">Double Parrot Beak Fork Attachment</a></li>
+                  <li><a href="#">4 Wheel Drum Trolley</a></li>
+                  <li><a href="#">3 Wheel Drum Trolley</a></li>
+                  <li><a href="#">Drum Palletizer</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Crane</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">EOT Crane</a></li>
+                  <li><a href="#">Jib Crane</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Press Machine</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Pneumatic Press Machine</a></li>
+                  <li><a href="#">Hydraulics Press Machine</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">CNC</a></li>
+              <li><a href="#">VMC</a></li>
+
+              <li><a href="#">Power Crimping Tool</a></li>
+
+
+            </ul>
+          </li>
+
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <!-- <img src="assets/assets/img//template/Groovin/hero-carousel/hero-carousel-1.jpg" alt=""> -->
+          <img src="assets\img\bg1.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Shrijay <br>Industrial Solutions</h2>
+            <p>Elevating Industries with Reliable Maintenance & Quality Equipment</p>
+            <!-- <a href="#featured-services" class="btn-get-started">Message Us</a> -->
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <!-- <img src="assets/assets/img//template/Groovin/hero-carousel/hero-carousel-2.jpg" alt=""> -->
+          <img src="assets\img\bg2.jpg" alt="">
+          <div class="carousel-container">
+            <!-- <h2 style="color: yellow;">Shrijay</h2> -->
+            <!-- <h2></h2> -->
+            <h2>Shrijay <br>Industrial Solutions</h2>
+            <p>CNC / VMC / EOT Crane Maintenance, Material Handling Equipment Maintenance, Hydraulic & Pneumatic Press
+              Machine Maintenance, Spare Parts Supply, Tools Supply</p>
+            <!-- <p >We Provide Maintenance tools and Spare parts <br> for MHE, CNC, VMC and EOT Cranes <br>in the Industry</p> -->
+            <!-- <a href="#featured-services" class="btn-get-started">Message Us</a> -->
+
+            <!-- <a href="https://wa.me/8669747214">Message Us</a> -->
+
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <!-- <div class="carousel-item">
+          <img src="assets/assets/img//template/Groovin/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Shrijay Industrial Solutions</h2>
+            <p>We Provide Maintenance tools and Spare parts <br> for MHE, CNC, VMC and EOT Cranes <br>in the Industry</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div>End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Services</h2> -->
+        <p style="font-size: large;">Welcome to our page! </p>
+
+        <p style="font-size: large;">We specialize in breakdown and preventive maintenance of various industrial machinery, including Material
+          Handling Equipment, EOT and JIB Cranes, CNC, VMC, Pneumatic, and Hydraulic Power Press Machines. Additionally,
+          we supply essential spare parts, consumables, and industrial tools to ensure smooth operations for your
+          business.</p>
+      </div><!-- End Section Title -->
+
+    </section><!-- /Services Section -->
+
+
+
+
+
+    <!--  -->
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Product Range</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-8">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                <!-- <i class="faq-icon bi bi-question-circle"></i> -->
+                <h3>• Material Handling Equipment</h3>
+                <div class="faq-content">
+                  <p>Hand Pallet Truck, Stacker, Reach Truck, Table Trucks, Forklift, Docking Equipment, Order Pickers &
+                    Ladders, Drum Handlers, Lifting Fixture, Aisle Master.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <!-- <i class="faq-icon bi bi-question-circle"></i> -->
+                <h3>• Cranes & Industrial Machinery</h3>
+                <div class="faq-content">
+                  <p>EOT Crane, JIB Crane, CNC, VMC, Pneumatic Press Machine, Hydraulic Press Machine.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <!-- <i class="faq-icon bi bi-question-circle"></i> -->
+                <h3>• Tools & Consumables</h3>
+                <div class="faq-content">
+                  <p>Power Crimping Tools, Consumable Items, Necessary Industrial Tools, New Developing Jigs & Fixtures,
+                    PU & Caster Wheels</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Why Choose Us?</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <!-- <span>01</span> -->
+              <h4><a href="" class="stretched-link">Expert Team</a></h4>
+              <p>Our experienced engineers efficiently diagnose and resolve breakdowns.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <!-- <span>02</span> -->
+              <h4><a href="" class="stretched-link">Complete Industrial Solutions</a></h4>
+              <p>We offer both maintenance and spare parts, saving you time and effort.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <!-- <span>03</span> -->
+              <h4><a href="" class="stretched-link">Minimized Downtime</a></h4>
+              <p>Our prompt service ensures your equipment remains operational, preventing production losses.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <!-- <span>03</span> -->
+              <h4><a href="" class="stretched-link">One-Stop-Shop</a></h4>
+              <p>From consumables to heavy machinery components, we provide everything under one roof.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <!-- <span>03</span> -->
+              <h4><a href="" class="stretched-link">Timely Service</a></h4>
+              <p>We ensure all tasks are completed on schedule, avoiding unnecessary machine shutdowns.</p>
+            </div>
+          </div><!-- Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+
+
+      <!--  -->
+      <!-- Work with Us -->
+      <section id="why-us" class="why-us section">
+
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Who We Are</h2>
+          <p>We are a trusted provider of industrial maintenance services and equipment supply, ensuring businesses run
+            smoothly with minimal downtime. Our expertise spans across various sectors, offering tailored solutions for
+            Material Handling Equipment, CNC, VMC, Pneumatic, and Hydraulic machines.</p> <br>
+          <p>We started the company considering the increasing demands and engineers for the current maintenance work.
+            Our company is committed to making the work in the industry more dynamic and providing maintenance services.
+            Our company provides maintenance of MHE, EOT Crane, CNC/VMC machine, Jig & Fixture, Press machine etc. and
+            also supplies tools and spare parts required in the industry. Also, our company is located in Ambad midc,
+            Nashik. Tools and spare parts are available in the company, & it supplies spare parts and tools in a short
+            time.</p>
+        </div><!-- End Section Title -->
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Work With Us</h2>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <h4><a href="" class="stretched-link">Rapid Breakdown Solutions</a></h4>
+                <h6>Our skilled engineers swiftly address all breakdowns, ensuring minimal operational delays.</h6>
+
+              </div>
+            </div><!-- Card Item -->
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-item">
+                <h4><a href="" class="stretched-link">Comprehensive Spare Parts Supply</a></h4>
+                <h6>We provide all necessary parts, reducing time spent sourcing components.</h6>
+              </div>
+            </div><!-- Card Item -->
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-item">
+                <h4><a href="" class="stretched-link">Industrial Equipment Services</a></h4>
+                <h6>We handle all MHE equipment, CNC, VMC, pneumatic, and hydraulic machinery under one roof for maximum
+                  convenience.</h6>
+              </div>
+            </div><!-- Card Item -->
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-item">
+                <h4><a href="" class="stretched-link">Consumables & Tools</a></h4>
+                <h6>We supply all essential industrial consumables, pneumatic and hydraulic machine components, and
+                  necessary tools in one place.</h6>
+              </div>
+            </div><!-- Card Item -->
+
+          </div>
+
+
+        </div>
+
+        </div>
+
+      </section><!-- /Work with Us -->
+
+
+      <!-- Founder -->
+       <!-- Section Title -->
+       <div class="container section-title" data-aos="fade-up">
+        <h2>Meet Our Founder</h2> 
+      </div><!-- End Section Title -->
+
+      <div class="container my-5">
+        <div class="row align-items-center">
+          
+          <!-- Founder Image -->
+          <div class="col-lg-4 text-center">
+            <!-- <h2 class="fw-bold">Meet Our Founder</h2> <br> -->
+            <img src="assets\img\sachin.jpeg" class="img-fluid rounded shadow" alt="Sachin Thakare"> 
+          </div>
+
+          <!-- Founder Details -->
+          <div class="col-lg-8">
+            <!-- <h2 class="fw-bold">Meet Our Founder</h2> <br> --> <br>
+            <h4 class="text-primary">Sachin Thakare – Founder & Managing Director</h4>
+            <p>🎓 <strong>Education:</strong> B.E. Mechanical</p>
+
+            <h3 class="mt-4">Our Journey</h3>
+            <p class="fst-italic">"The foundation of <strong>Shrijay Industrial Solutions</strong> is built on years of
+              hands-on experience and a passion for innovation in the industrial sector."</p>
+
+            <p>
+              After completing my <strong>Diploma in Mechanical Engineering</strong>, I began my career at
+              <strong>Suzuki Motors Gujarat</strong>. This journey led me to work with esteemed companies like
+              <strong>Bosch, Siemens, Fiat, and Godrej</strong>, where I gained in-depth expertise in industrial
+              maintenance.
+            </p>
+
+            <p>
+              My experience in the <strong>maintenance department</strong> gave me deep insights into the challenges and
+              opportunities within this industry. With a vision to bring
+              <strong>efficient, high-quality solutions</strong> to businesses, I decided to <strong>start my own
+                company</strong>—providing services for
+              <strong>Material Handling Equipment (MHE), EOT & Jib Cranes, CNC & VMC Machines</strong>.
+            </p>
+
+            <h3 class="mt-4">A Message from Our Founder</h3>
+            <p class="fst-italic">"Throughout my journey, I have received invaluable guidance from many mentors and
+              professionals. I am grateful for their support and look forward to collaborating with you."</p>
+
+            <h5 class="mt-3">📞 Let's Connect – Feel free to reach out for our services!</h5>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Founder end -->
+
+
+
+
+
+
+
+
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Products</h2>
+
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul>End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\p1.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Pallet Trucks</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="assets\img\p2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Table Trucks</h4>
+
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="assets\img\p3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Stacker</h4>
+
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="assets\img\p4.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Forklift</h4>
+
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                <img src="assets\img\p5.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Docking equipment</h4>
+
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\p6.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Goods lift</h4>
+
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="assets\img\p8.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Order pickers and Ladders</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\p7.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Drum handlers</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\jib-crane.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Jib Cranes</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\press2.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Pneumatic Press Machine</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\industrial-eot-cranes.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>EOT Cranes</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\hydr_press.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Hydraulic Press Machine</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\VMC.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>VMC</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets\img\cnc.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>CNC</h4>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+
+
+
+
+
+
+            </div><!-- End Portfolio Container -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Portfolio Section -->
+
+
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Whether you have a query, need more information, we are just a message away.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <h6>Shop No. 17, Saichatra App.</h6>
+                <h6>Satpur Ambad Link Road,</h6>
+                <h6>Nashik-422007</h6>
+                <h6>Maharashtra, India</h6>
+                
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Us</h3>
+                <h6>+91 9405654026</h6>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <h6>mdshrijay@gmail.com</h6>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+<hr><br>
+         
+
+          <!-- <div class="col-md-6 comment-box">
+            <form class="comment-form" action="https://formsubmit.co/mdshrijay@gmail.com" method="POST">
+              
+              <input type="email" id="email" name="email" placeholder="Enter Email" required>
+              <input type="subject" id="subject" name="subject" placeholder="Enter Subject" required>
+              <textarea rows="5" id="message" name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div> -->
+
+
+
+
+          <!--  -->
+
+
+          
+
+
+
+
+          <!--  -->
+
+
+
+
+
+          <!--  -->
+
+
+
+
+        </div>
+
+      </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Shrijay</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Shop No. 17, Saichatra App.,</p>
+            <p>Satpur Ambad Link Road, </p>
+            <p>Nashik-422007</p>
+            <p>Maharashtra, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9405654026</span></p>
+            <p><strong>Email:</strong> <span>mdshrijay@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+            <!-- <a href=""><i class="bi bi-facebook"></i></a> -->
+            <a href="https://www.instagram.com/shrijay9449?igsh=YjZtNjhybjh4dmc3"><i class="bi bi-instagram"></i></a>
+            <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">CNC / VMC / EOT Crane Maintenance</a></li>
+            <li><a href="#">Material Handling, Equipment Maintenance</a></li>
+            <li><a href="#">Hydraulic & Pneumatic Press Machine Maintenance</a></li>
+            <li><a href="#">Spare Parts Supply</a></li>
+            <li><a href="#">Tools Supply</a></li>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Shrijay</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://rani-kamble.netlify.app/">Rani Kamble</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/9405654026" target="_blank" class="whatsapp-button">
+    <img src="assets/img/whatsapp.png" alt="WhatsApp">
+  </a>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      var form = document.getElementById("contactForm");
+
+      // Simulate a form submission delay and reset the form after it is successfully submitted
+      setTimeout(function () {
+        // Reset the form after a delay of 2 seconds
+        form.reset();
+      }, 2000);  // 2-second delay before resetting the form
+
+      // Show a success message after submission (optional)
+      alert("Your message has been sent successfully!");
+    }
+  </script>
+
+</body>
+
+</html>
